@@ -3,23 +3,14 @@ import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 
 const typeItIn = props => {
   const fontFamily = [
-    'Mansalva',
     'Dancing Script',
     'Pacifico',
-    'Shadows Into Light',
-    'Satisfy',
-    'Permanent Marker',
-    'Courgette',
-    'Kaushan Script',
-    'Great Vibes',
     'Cookie',
-    'Gloria Hallelujah',
-    'Liu Jian Mao Cao',
     'Sacramento',
-    'Zhi Mang Xing',
-    'Long Cang'
+    'Cedarville',
+    'Homemade Apple',
+    'Damion'
   ];
-
   return (
     <>
       <Row>
@@ -135,7 +126,6 @@ const typeItIn = props => {
                 id="change-font"
                 onChange={event => props.changeFontHandler(event)}
               >
-                <option value="Permanent Marker, cursive">Select Font</option>
                 {fontFamily.map(fontName => {
                   return (
                     <option key={fontName} value={fontName + ',cursive'}>

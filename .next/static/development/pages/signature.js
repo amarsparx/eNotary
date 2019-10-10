@@ -181,18 +181,18 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var typeItIn = function typeItIn(props) {
-  var fontFamily = ['Mansalva', 'Dancing Script', 'Pacifico', 'Shadows Into Light', 'Satisfy', 'Permanent Marker', 'Courgette', 'Kaushan Script', 'Great Vibes', 'Cookie', 'Gloria Hallelujah', 'Liu Jian Mao Cao', 'Sacramento', 'Zhi Mang Xing', 'Long Cang'];
+  var fontFamily = ['Dancing Script', 'Pacifico', 'Cookie', 'Sacramento', 'Cedarville', 'Homemade Apple', 'Damion'];
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 16
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 17
     },
     __self: this
   }, __jsx("h2", {
@@ -202,13 +202,13 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 18
     },
     __self: this
   }, "Create your Signature"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 23
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -217,19 +217,19 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 24
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 25
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 26
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -239,7 +239,7 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 27
     },
     __self: this
   }, "Confirm your name"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -252,20 +252,20 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 30
     },
     __self: this
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 39
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 40
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -275,7 +275,7 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 41
     },
     __self: this
   }, "Confirm your initials"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -288,19 +288,19 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 44
     },
     __self: this
   })))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 54
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 55
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -310,7 +310,7 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 56
     },
     __self: this
   }, "Preview"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -319,19 +319,19 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 61
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 62
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 63
     },
     __self: this
   }, __jsx("span", {
@@ -348,20 +348,20 @@ var typeItIn = function typeItIn(props) {
     className: "name-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 64
     },
     __self: this
   }, props.name))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 81
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 82
     },
     __self: this
   }, __jsx("span", {
@@ -379,7 +379,7 @@ var typeItIn = function typeItIn(props) {
     className: "initials-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 83
     },
     __self: this
   }, props.initialsName)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -388,31 +388,31 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 103
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 104
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 105
     },
     __self: this
   }, "By clicking Accept and Sign, I agree that the signature wil be the electric representation of my signature for all purposewhen I for my agend use themon documents. Including legallybinding documnets, just the same as pen and paper signature.", ' '))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 114
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 115
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
@@ -421,7 +421,7 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 116
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -432,7 +432,7 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 117
     },
     __self: this
   }, "Change Font:"), __jsx("select", {
@@ -446,23 +446,16 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 123
     },
     __self: this
-  }, __jsx("option", {
-    value: "Permanent Marker, cursive",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138
-    },
-    __self: this
-  }, "Select Font"), fontFamily.map(function (fontName) {
+  }, fontFamily.map(function (fontName) {
     return __jsx("option", {
       key: fontName,
       value: fontName + ',cursive',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141
+        lineNumber: 131
       },
       __self: this
     }, fontName);
@@ -470,13 +463,13 @@ var typeItIn = function typeItIn(props) {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 139
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 140
     },
     __self: this
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -487,7 +480,7 @@ var typeItIn = function typeItIn(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 141
     },
     __self: this
   }, "Accept and Sign"))))));
@@ -20405,7 +20398,7 @@ function (_React$Component) {
       activeTab: _this.tabs.TYPE_IN_IT,
       name: '',
       initialsName: '',
-      nameFont: 'Permanent Marker, cursive'
+      nameFont: 'Dancing Script, cursive'
     };
     return _this;
   }

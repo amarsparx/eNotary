@@ -27,7 +27,7 @@ class Signature extends React.Component {
       activeTab: this.tabs.TYPE_IN_IT,
       name: '',
       initialsName: '',
-      nameFont: 'Permanent Marker, cursive'
+      nameFont: 'Dancing Script, cursive'
     };
   }
 
