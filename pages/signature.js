@@ -48,7 +48,6 @@ class Signature extends React.Component {
   };
 
   changeFontHandler = event => {
-    console.log(event.target.value);
     this.setState({ nameFont: event.target.value });
   };
 
@@ -63,7 +62,7 @@ class Signature extends React.Component {
         fontName: this.state.nameFont
       }
     };
-    console.log(payloadData, 'payload');
+    console.log('[TYPE IN DATA PAYLOAD]', payloadData);
   };
 
   submitDrawSignature = () => {
@@ -73,11 +72,10 @@ class Signature extends React.Component {
       signature: sigCanvas,
       initials: initialsSigCanvas
     };
-    console.log(payloadData);
+    console.log('[DRAW SIGNATURE PAYLOAD]', payloadData);
   };
 
   render() {
-    console.log('[name]', this.state.name);
     return (
       <>
         <Head>

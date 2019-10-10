@@ -649,10 +649,10 @@ function _defineProperty(obj, key, value) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/signature.js":
+/*!****************************!*\
+  !*** ./pages/signature.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -676,7 +676,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/sis075/Documents/signature/pages/index.js";
+var _jsxFileName = "/home/sis075/Documents/signature/pages/signature.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
@@ -710,7 +710,6 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "changeFontHandler", event => {
-      console.log(event.target.value);
       this.setState({
         nameFont: event.target.value
       });
@@ -727,7 +726,7 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
           fontName: this.state.nameFont
         }
       };
-      console.log(payloadData, 'payload');
+      console.log('[TYPE IN DATA PAYLOAD]', payloadData);
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "submitDrawSignature", () => {
@@ -737,7 +736,7 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
         signature: sigCanvas,
         initials: initialsSigCanvas
       };
-      console.log(payloadData);
+      console.log('[DRAW SIGNATURE PAYLOAD]', payloadData);
     });
 
     this.tabs = _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()({
@@ -755,11 +754,10 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
   }
 
   render() {
-    console.log('[name]', this.state.name);
     return __jsx(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83
+        lineNumber: 81
       },
       __self: this
     }, __jsx("link", {
@@ -767,7 +765,7 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       rel: "stylesheet",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 82
       },
       __self: this
     }), __jsx("link", {
@@ -775,32 +773,32 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       href: "/static/css/bootstrap.min.css",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 86
       },
       __self: this
     })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Container"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 89
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 90
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
       xs: "3",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 91
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 92
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroupItem"], {
@@ -813,7 +811,7 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       tag: "button",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 93
       },
       __self: this
     }, "Type it in"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroupItem"], {
@@ -826,27 +824,27 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106
+        lineNumber: 104
       },
       __self: this
     }, "Draw It"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121
+        lineNumber: 119
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabContent"], {
       activeTab: this.state.activeTab,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122
+        lineNumber: 120
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabPane"], {
       tabId: this.tabs.TYPE_IN_IT,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123
+        lineNumber: 121
       },
       __self: this
     }, __jsx(_components_typeItIn__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -859,14 +857,14 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       submitTypeInData: this.submitTypeInData,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124
+        lineNumber: 122
       },
       __self: this
     })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabPane"], {
       tabId: this.tabs.DRAW_IT,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134
+        lineNumber: 132
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
@@ -875,21 +873,21 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135
+        lineNumber: 133
       },
       __self: this
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
       sm: "12",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136
+        lineNumber: 134
       },
       __self: this
     }, __jsx("h2", {
       className: "text-center",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137
+        lineNumber: 135
       },
       __self: this
     }, "Create your Signature"))), __jsx(_components_drawIt__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -898,7 +896,7 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       submitDrawSignature: this.submitDrawSignature,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 138
       },
       __self: this
     })))))));
@@ -911,13 +909,13 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
 /***/ }),
 
 /***/ 4:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/*!**********************************!*\
+  !*** multi ./pages/signature.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/sis075/Documents/signature/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /home/sis075/Documents/signature/pages/signature.js */"./pages/signature.js");
 
 
 /***/ }),
@@ -1011,4 +1009,4 @@ module.exports = require("reactstrap");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=signature.js.map

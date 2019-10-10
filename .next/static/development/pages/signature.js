@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/signature.js"],{
 
 /***/ "./components/drawIt.js":
 /*!******************************!*\
@@ -4949,21 +4949,21 @@ module.exports = toNumber;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Findex.js!./":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Findex.js ***!
-  \************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignature&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Fsignature.js!./":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignature&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Fsignature.js ***!
+  \*************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/signature", function() {
+      var mod = __webpack_require__(/*! ./pages/signature.js */ "./pages/signature.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/signature.js */ "./pages/signature.js", function() {
+          if(!next.router.components["/signature"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/signature.js */ "./pages/signature.js")
+          next.router.update("/signature", updatedPage)
         })
       }
       return mod
@@ -20284,10 +20284,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/signature.js":
+/*!****************************!*\
+  !*** ./pages/signature.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -20322,7 +20322,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/sis075/Documents/signature/pages/index.js";
+var _jsxFileName = "/home/sis075/Documents/signature/pages/signature.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
 
 
@@ -20364,8 +20364,6 @@ function (_React$Component) {
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "changeFontHandler", function (event) {
-      console.log(event.target.value);
-
       _this.setState({
         nameFont: event.target.value
       });
@@ -20382,7 +20380,7 @@ function (_React$Component) {
           fontName: _this.state.nameFont
         }
       };
-      console.log(payloadData, 'payload');
+      console.log('[TYPE IN DATA PAYLOAD]', payloadData);
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "submitDrawSignature", function () {
@@ -20394,7 +20392,7 @@ function (_React$Component) {
         signature: sigCanvas,
         initials: initialsSigCanvas
       };
-      console.log(payloadData);
+      console.log('[DRAW SIGNATURE PAYLOAD]', payloadData);
     });
 
     _this.tabs = _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()({
@@ -20417,11 +20415,10 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      console.log('[name]', this.state.name);
       return __jsx(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_12___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 81
         },
         __self: this
       }, __jsx("link", {
@@ -20429,7 +20426,7 @@ function (_React$Component) {
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 82
         },
         __self: this
       }), __jsx("link", {
@@ -20437,32 +20434,32 @@ function (_React$Component) {
         href: "/static/css/bootstrap.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 86
         },
         __self: this
       })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 89
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Row"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 90
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Col"], {
         xs: "3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 91
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["ListGroup"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 92
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["ListGroupItem"], {
@@ -20475,7 +20472,7 @@ function (_React$Component) {
         tag: "button",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 93
         },
         __self: this
       }, "Type it in"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["ListGroupItem"], {
@@ -20488,27 +20485,27 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 104
         },
         __self: this
       }, "Draw It"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Col"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 119
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["TabContent"], {
         activeTab: this.state.activeTab,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 120
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["TabPane"], {
         tabId: this.tabs.TYPE_IN_IT,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 121
         },
         __self: this
       }, __jsx(_components_typeItIn__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -20521,14 +20518,14 @@ function (_React$Component) {
         submitTypeInData: this.submitTypeInData,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 122
         },
         __self: this
       })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["TabPane"], {
         tabId: this.tabs.DRAW_IT,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 132
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Row"], {
@@ -20537,21 +20534,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 133
         },
         __self: this
       }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Col"], {
         sm: "12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 134
         },
         __self: this
       }, __jsx("h2", {
         className: "text-center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 135
         },
         __self: this
       }, "Create your Signature"))), __jsx(_components_drawIt__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -20560,7 +20557,7 @@ function (_React$Component) {
         submitDrawSignature: this.submitDrawSignature,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 138
         },
         __self: this
       })))))));
@@ -20575,13 +20572,13 @@ function (_React$Component) {
 /***/ }),
 
 /***/ 1:
-/*!****************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Findex.js ***!
-  \****************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fsignature&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Fsignature.js ***!
+  \*****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsignature&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Fsignature.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignature&absolutePagePath=%2Fhome%2Fsis075%2FDocuments%2Fsignature%2Fpages%2Fsignature.js!./");
 
 
 /***/ }),
@@ -20598,4 +20595,4 @@ module.exports = dll_6b5a3ee2368b61971f52;
 /***/ })
 
 },[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=signature.js.map
