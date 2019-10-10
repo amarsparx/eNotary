@@ -1,0 +1,15 @@
+node_modules
+node_modules/*
+.idea
+.idea/*yarn-error.log
+*/*yarn-error.log
+repository/
+requirements.lock
+.service-account.json
+charts/enotarylog/charts/enotarylog-api-0.1.0.tgz
+charts/enotarylog/charts/enotarylog-fe-0.1.0.tgz
+charts/enotarylog/requirements.lock
+yarn.lock
+package-lock.json
+.db/dev.db
+dev.db
