@@ -6,10 +6,10 @@ const drawIt = props => {
   return (
     <>
       <Form>
-        <Row style={{ marginBottom: '30px' }}>
+        <Row style={{ marginBottom: '15px' }}>
           <Col>Draw Signature</Col>
         </Row>
-        <Row>
+        <Row style={{ marginBottom: '30px' }}>
           <Col>
             <SignatureCanvas
               ref={props.sigCanvasRef}
@@ -23,10 +23,10 @@ const drawIt = props => {
             />
           </Col>
         </Row>
-        <Row>
+        <Row style={{ marginBottom: '10px' }}>
           <Col>Draw Initials</Col>
         </Row>
-        <Row>
+        <Row style={{ marginBottom: '30px' }}>
           <Col>
             <SignatureCanvas
               ref={props.initialsSigCanvasRef}
@@ -40,7 +40,7 @@ const drawIt = props => {
             />
           </Col>
         </Row>
-        <Row>
+        <Row style={{ marginBottom: '15px' }}>
           <Col>
             <p>
               By clicking Accept and Sign, I agree that the signature wil be the

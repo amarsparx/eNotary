@@ -123,7 +123,7 @@ const drawIt = props => {
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     style: {
-      marginBottom: '30px'
+      marginBottom: '15px'
     },
     __source: {
       fileName: _jsxFileName,
@@ -137,6 +137,9 @@ const drawIt = props => {
     },
     __self: undefined
   }, "Draw Signature")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    style: {
+      marginBottom: '30px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -163,6 +166,9 @@ const drawIt = props => {
     },
     __self: undefined
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    style: {
+      marginBottom: '10px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -175,6 +181,9 @@ const drawIt = props => {
     },
     __self: undefined
   }, "Draw Initials")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    style: {
+      marginBottom: '30px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -201,6 +210,9 @@ const drawIt = props => {
     },
     __self: undefined
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    style: {
+      marginBottom: '15px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
@@ -526,13 +538,20 @@ const typeItIn = props => {
       lineNumber: 132
     },
     __self: undefined
-  }, fontFamily.map(fontName => {
+  }, __jsx("option", {
+    value: "Permanent Marker, cursive",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: undefined
+  }, "Select Font"), fontFamily.map(fontName => {
     return __jsx("option", {
       key: fontName,
       value: fontName + ',cursive',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 141
       },
       __self: undefined
     }, fontName);
@@ -540,13 +559,13 @@ const typeItIn = props => {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 149
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 150
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -557,7 +576,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 151
     },
     __self: undefined
   }, "Accept and Sign"))))));

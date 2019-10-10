@@ -135,6 +135,7 @@ const typeItIn = props => {
                 id="change-font"
                 onChange={event => props.changeFontHandler(event)}
               >
+                <option value="Permanent Marker, cursive">Select Font</option>
                 {fontFamily.map(fontName => {
                   return (
                     <option key={fontName} value={fontName + ',cursive'}>
