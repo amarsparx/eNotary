@@ -13,3 +13,4 @@ yarn.lock
 package-lock.json
 .db/dev.db
 dev.db
+.next
