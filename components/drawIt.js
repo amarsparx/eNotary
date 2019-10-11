@@ -5,7 +5,12 @@ import SignatureCanvas from 'react-signature-canvas';
 const drawIt = props => {
   return (
     <>
-      <Form>
+      <Form
+        onSubmit={e => {
+          e.preventDefault();
+          props.onSubmit();
+        }}
+      >
         <Row style={{ marginBottom: '15px' }}>
           <Col>Draw Signature</Col>
         </Row>
@@ -52,10 +57,7 @@ const drawIt = props => {
         </Row>
         <Row>
           <Col>
-            <Button
-              onClick={props.submitDrawSignature}
-              color="primary float-right"
-            >
+            <Button type="submit" color="primary float-right">
               Accept and Sign
             </Button>
           </Col>

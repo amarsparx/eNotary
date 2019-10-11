@@ -1,16 +1,17 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 const typeItIn = props => {
   const fontFamily = [
     'Dancing Script',
     'Pacifico',
     'Cookie',
-    'Sacramento',
-    'Cedarville',
+    'Cedarville Cursive',
     'Homemade Apple',
     'Damion'
   ];
+
   return (
     <>
       <Row>
@@ -20,7 +21,12 @@ const typeItIn = props => {
           </h2>
         </Col>
       </Row>
-      <Form>
+      <Form
+        onSubmit={e => {
+          e.preventDefault();
+          props.onSubmit();
+        }}
+      >
         <Row style={{ marginBottom: '30px' }}>
           <Col>
             <FormGroup>
@@ -139,8 +145,8 @@ const typeItIn = props => {
           <Col sm="4">
             <FormGroup>
               <Button
-                color="primary"
-                onClick={props.submitTypeInData}
+                type="submit"
+                className="btn btn-lg btn-primary col-lg-12"
                 style={{ float: 'right' }}
               >
                 Accept and Sign
@@ -152,5 +158,9 @@ const typeItIn = props => {
     </>
   );
 };
+// typeItIn.propTypes = {
+//   onSubmit: PropTypes.func.isRequired,
+//   show: PropTypes.bool
+// };
 
 export default typeItIn;

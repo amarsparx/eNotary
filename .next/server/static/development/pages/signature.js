@@ -88,10 +88,72 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/Modals/SignaturePadModal.js":
+/*!************************************************!*\
+  !*** ./components/Modals/SignaturePadModal.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _signature__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../signature */ "./components/signature.js");
+var _jsxFileName = "/home/sis075/Documents/signature/components/Modals/SignaturePadModal.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+class SignaturePadModal extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"], {
+      style: {
+        zIndex: 4000,
+        border: '1px solid'
+      },
+      show: true,
+      onHide: this.props.onHide,
+      variant: "primary",
+      size: "xl",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, __jsx(_signature__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      onSubmit: this.props.onSubmit,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SignaturePadModal);
+
+/***/ }),
 
 /***/ "./components/drawIt.js":
 /*!******************************!*\
@@ -116,6 +178,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const drawIt = props => {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+    onSubmit: e => {
+      e.preventDefault();
+      props.onSubmit();
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -127,13 +193,13 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 15
     },
     __self: undefined
   }, "Draw Signature")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -142,13 +208,13 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 17
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     },
     __self: undefined
   }, __jsx(react_signature_canvas__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -162,7 +228,7 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 19
     },
     __self: undefined
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -171,13 +237,13 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 31
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 32
     },
     __self: undefined
   }, "Draw Initials")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -186,13 +252,13 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 34
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 35
     },
     __self: undefined
   }, __jsx(react_signature_canvas__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -206,7 +272,7 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 36
     },
     __self: undefined
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -215,45 +281,325 @@ const drawIt = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 48
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 49
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 50
     },
     __self: undefined
   }, "By clicking Accept and Sign, I agree that the signature wil be the electric representation of my signature for all purposewhen I for my agend use themon documents. Including legallybinding documnets, just the same as pen and paper signature.", ' '))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 58
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    onClick: props.submitDrawSignature,
+    type: "submit",
     color: "primary float-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 60
     },
     __self: undefined
   }, "Accept and Sign")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (drawIt);
+
+/***/ }),
+
+/***/ "./components/signature.js":
+/*!*********************************!*\
+  !*** ./components/signature.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _typeItIn__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./typeItIn */ "./components/typeItIn.js");
+/* harmony import */ var _drawIt__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./drawIt */ "./components/drawIt.js");
+
+
+
+var _jsxFileName = "/home/sis075/Documents/signature/components/signature.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
+
+
+
+
+
+
+
+
+class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  // static defaultProps = {
+  //   middleName: ''
+  // };
+  constructor(props) {
+    super(props);
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "toggle", tab => {
+      if (this.state.activeTab !== tab) {
+        this.setState({
+          activeTab: tab
+        });
+      }
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "nameChangeHandler", event => {
+      this.setState({
+        name: event.target.value
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "initialsNameChangeHandler", event => {
+      this.setState({
+        initialsName: event.target.value
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "changeFontHandler", event => {
+      this.setState({
+        nameFont: event.target.value
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "submitTypeInData", () => {
+      const payloadData = {
+        signature: {
+          text: this.state.name,
+          font: this.state.nameFont
+        },
+        initials: {
+          text: this.state.initialsName,
+          font: this.state.nameFont
+        }
+      };
+      return payloadData; // console.log('[TYPE IN DATA PAYLOAD]', payloadData);
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "submitDrawSignature", () => {
+      try {
+        const sigCanvas = this.sigCanvas.current.toDataURL();
+        const initialsSigCanvas = this.initialsSigCanvas.current.toDataURL();
+        const payloadData = {
+          signature: sigCanvas,
+          initials: initialsSigCanvas
+        };
+        this.sigCanvas.current.clear();
+        this.initialsSigCanvas.current.clear();
+        return payloadData;
+      } catch (err) {
+        console.error('error caught', err);
+      }
+    });
+
+    this.tabs = _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()({
+      TYPE_IN_IT: _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0___default()('type-it-in'),
+      DRAW_IT: _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0___default()('draw-it')
+    });
+    this.sigCanvas = react__WEBPACK_IMPORTED_MODULE_3___default.a.createRef();
+    this.initialsSigCanvas = react__WEBPACK_IMPORTED_MODULE_3___default.a.createRef();
+    this.state = {
+      activeTab: this.tabs.TYPE_IN_IT,
+      name: '',
+      initialsName: '',
+      nameFont: 'Dancing Script, cursive'
+    };
+  }
+
+  render() {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      },
+      __self: this
+    }, __jsx("link", {
+      href: "https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cookie|Damion|Dancing+Script|Homemade+Apple|Pacifico&display=swap",
+      rel: "stylesheet",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
+    }), __jsx("link", {
+      rel: "stylesheet",
+      href: "/static/css/bootstrap.min.css",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: this
+    })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Container"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+      xs: "3",
+      style: {
+        marginTop: '77px'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 109
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroupItem"], {
+      className: classnames__WEBPACK_IMPORTED_MODULE_5___default()({
+        active: this.state.activeTab === this.tabs.TYPE_IN_IT
+      }),
+      onClick: () => {
+        this.toggle(this.tabs.TYPE_IN_IT);
+      },
+      tag: "button",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 110
+      },
+      __self: this
+    }, "Type it in"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroupItem"], {
+      tag: "button",
+      className: classnames__WEBPACK_IMPORTED_MODULE_5___default()({
+        active: this.state.activeTab === this.tabs.DRAW_IT
+      }),
+      onClick: () => {
+        this.toggle(this.tabs.DRAW_IT);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121
+      },
+      __self: this
+    }, "Draw It"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 136
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabContent"], {
+      activeTab: this.state.activeTab,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 137
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabPane"], {
+      tabId: this.tabs.TYPE_IN_IT,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 138
+      },
+      __self: this
+    }, __jsx(_typeItIn__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      nameChangeHandler: this.nameChangeHandler,
+      initialsNameChangeHandler: this.initialsNameChangeHandler,
+      changeFontHandler: this.changeFontHandler,
+      nameFont: this.state.nameFont,
+      name: this.state.name,
+      initialsName: this.state.initialsName,
+      onSubmit: () => this.props.onSubmit(this.submitTypeInData()),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 139
+      },
+      __self: this
+    })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabPane"], {
+      tabId: this.tabs.DRAW_IT,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 151
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
+      style: {
+        marginBottom: '30px'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 152
+      },
+      __self: this
+    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
+      sm: "12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 153
+      },
+      __self: this
+    }, __jsx("h2", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 154
+      },
+      __self: this
+    }, "Create your Signature"))), __jsx(_drawIt__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      sigCanvasRef: this.sigCanvas,
+      initialsSigCanvasRef: this.initialsSigCanvas,
+      onSubmit: () => this.props.onSubmit(this.submitDrawSignature()) // onSubmit={this.submitDrawSignature}
+      ,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 157
+      },
+      __self: this
+    })))))));
+  }
+
+}
+
+Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(Signature, "propTypes", {
+  onSubmit: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.func.isRequired,
+  show: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.bool
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Signature);
 
 /***/ }),
 
@@ -270,24 +616,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/home/sis075/Documents/signature/components/typeItIn.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const typeItIn = props => {
-  const fontFamily = ['Dancing Script', 'Pacifico', 'Cookie', 'Sacramento', 'Cedarville', 'Homemade Apple', 'Damion'];
+  const fontFamily = ['Dancing Script', 'Pacifico', 'Cookie', 'Cedarville Cursive', 'Homemade Apple', 'Damion'];
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: undefined
   }, __jsx("h2", {
@@ -297,13 +646,17 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: undefined
   }, "Create your Signature"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+    onSubmit: e => {
+      e.preventDefault();
+      props.onSubmit();
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -312,19 +665,19 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 31
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -334,7 +687,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 33
     },
     __self: undefined
   }, "Confirm your name"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -345,20 +698,20 @@ const typeItIn = props => {
     onChange: event => props.nameChangeHandler(event),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 36
     },
     __self: undefined
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 46
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -368,7 +721,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 47
     },
     __self: undefined
   }, "Confirm your initials"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -379,19 +732,19 @@ const typeItIn = props => {
     onChange: event => props.initialsNameChangeHandler(event),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 50
     },
     __self: undefined
   })))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -401,7 +754,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 62
     },
     __self: undefined
   }, "Preview"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -410,19 +763,19 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 67
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 68
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 69
     },
     __self: undefined
   }, __jsx("span", {
@@ -439,20 +792,20 @@ const typeItIn = props => {
     className: "name-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 70
     },
     __self: undefined
   }, props.name))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 87
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 88
     },
     __self: undefined
   }, __jsx("span", {
@@ -470,7 +823,7 @@ const typeItIn = props => {
     className: "initials-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 89
     },
     __self: undefined
   }, props.initialsName)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -479,31 +832,31 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 109
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 110
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 111
     },
     __self: undefined
   }, "By clicking Accept and Sign, I agree that the signature wil be the electric representation of my signature for all purposewhen I for my agend use themon documents. Including legallybinding documnets, just the same as pen and paper signature.", ' '))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 120
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 121
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
@@ -512,7 +865,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 122
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -523,7 +876,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 123
     },
     __self: undefined
   }, "Change Font:"), __jsx("select", {
@@ -535,7 +888,7 @@ const typeItIn = props => {
     onChange: event => props.changeFontHandler(event),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 129
     },
     __self: undefined
   }, fontFamily.map(fontName => {
@@ -544,7 +897,7 @@ const typeItIn = props => {
       value: fontName + ',cursive',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131
+        lineNumber: 137
       },
       __self: undefined
     }, fontName);
@@ -552,28 +905,32 @@ const typeItIn = props => {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 145
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 146
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    color: "primary",
-    onClick: props.submitTypeInData,
+    type: "submit",
+    className: "btn btn-lg btn-primary col-lg-12",
     style: {
       float: 'right'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 147
     },
     __self: undefined
   }, "Accept and Sign"))))));
-};
+}; // typeItIn.propTypes = {
+//   onSubmit: PropTypes.func.isRequired,
+//   show: PropTypes.bool
+// };
+
 
 /* harmony default export */ __webpack_exports__["default"] = (typeItIn);
 
@@ -651,248 +1008,44 @@ function _defineProperty(obj, key, value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_typeItIn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/typeItIn */ "./components/typeItIn.js");
-/* harmony import */ var _components_drawIt__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/drawIt */ "./components/drawIt.js");
-
-
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Modals_SignaturePadModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Modals/SignaturePadModal */ "./components/Modals/SignaturePadModal.js");
 
 var _jsxFileName = "/home/sis075/Documents/signature/pages/signature.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-
-
-
-class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+class Signature extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   constructor(props) {
     super(props);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "toggle", tab => {
-      if (this.state.activeTab !== tab) {
-        this.setState({
-          activeTab: tab
-        });
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "onSubmit", ({
+      signature,
+      initials
+    }) => {
+      if (typeof signature === 'string' && typeof initials === 'string') {
+        // signature/initials were drawn
+        console.log('[DRAW IT DATA]', signature, initials);
+      } else {
+        // signature/initials were typed
+        console.log('[TYPEIN DATA]', signature, initials);
       }
     });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "nameChangeHandler", event => {
-      this.setState({
-        name: event.target.value
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "initialsNameChangeHandler", event => {
-      this.setState({
-        initialsName: event.target.value
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "changeFontHandler", event => {
-      this.setState({
-        nameFont: event.target.value
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "submitTypeInData", () => {
-      const payloadData = {
-        signature: {
-          text: this.state.name,
-          fontName: this.state.nameFont
-        },
-        initialsSignature: {
-          text: this.state.initialsName,
-          fontName: this.state.nameFont
-        }
-      };
-      console.log('[TYPE IN DATA PAYLOAD]', payloadData);
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "submitDrawSignature", () => {
-      const sigCanvas = this.sigCanvas.current.toDataURL();
-      const initialsSigCanvas = this.initialsSigCanvas.current.toDataURL();
-      const payloadData = {
-        signature: sigCanvas,
-        initials: initialsSigCanvas
-      };
-      console.log('[DRAW SIGNATURE PAYLOAD]', payloadData);
-    });
-
-    this.tabs = _babel_runtime_corejs2_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()({
-      TYPE_IN_IT: _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0___default()('type-it-in'),
-      DRAW_IT: _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_0___default()('draw-it')
-    });
-    this.sigCanvas = react__WEBPACK_IMPORTED_MODULE_3___default.a.createRef();
-    this.initialsSigCanvas = react__WEBPACK_IMPORTED_MODULE_3___default.a.createRef();
-    this.state = {
-      activeTab: this.tabs.TYPE_IN_IT,
-      name: '',
-      initialsName: '',
-      nameFont: 'Dancing Script, cursive'
-    };
   }
 
   render() {
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_components_Modals_SignaturePadModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      show: true,
+      onSubmit: this.onSubmit,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 22
       },
       __self: this
-    }, __jsx("link", {
-      href: "https://fonts.googleapis.com/css?family=Cookie|Courgette|Dancing+Script|Gloria+Hallelujah|Great+Vibes|Kaushan+Script|Liu+Jian+Mao+Cao|Long+Cang|Mansalva|Pacifico|Permanent+Marker|Sacramento|Satisfy|Shadows+Into+Light|Zhi+Mang+Xing%26display=swap",
-      rel: "stylesheet",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82
-      },
-      __self: this
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/static/css/bootstrap.min.css",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 86
-      },
-      __self: this
-    })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Container"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 89
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
-      xs: "3",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 91
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 92
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroupItem"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_5___default()({
-        active: this.state.activeTab === this.tabs.TYPE_IN_IT
-      }),
-      onClick: () => {
-        this.toggle(this.tabs.TYPE_IN_IT);
-      },
-      tag: "button",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 93
-      },
-      __self: this
-    }, "Type it in"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroupItem"], {
-      tag: "button",
-      className: classnames__WEBPACK_IMPORTED_MODULE_5___default()({
-        active: this.state.activeTab === this.tabs.DRAW_IT
-      }),
-      onClick: () => {
-        this.toggle(this.tabs.DRAW_IT);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104
-      },
-      __self: this
-    }, "Draw It"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 119
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabContent"], {
-      activeTab: this.state.activeTab,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 120
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabPane"], {
-      tabId: this.tabs.TYPE_IN_IT,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 121
-      },
-      __self: this
-    }, __jsx(_components_typeItIn__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      nameChangeHandler: this.nameChangeHandler,
-      initialsNameChangeHandler: this.initialsNameChangeHandler,
-      changeFontHandler: this.changeFontHandler,
-      nameFont: this.state.nameFont,
-      name: this.state.name,
-      initialsName: this.state.initialsName,
-      submitTypeInData: this.submitTypeInData,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 122
-      },
-      __self: this
-    })), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["TabPane"], {
-      tabId: this.tabs.DRAW_IT,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 132
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
-      style: {
-        marginBottom: '30px'
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 133
-      },
-      __self: this
-    }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
-      sm: "12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 134
-      },
-      __self: this
-    }, __jsx("h2", {
-      className: "text-center",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 135
-      },
-      __self: this
-    }, "Create your Signature"))), __jsx(_components_drawIt__WEBPACK_IMPORTED_MODULE_8__["default"], {
-      sigCanvasRef: this.sigCanvas,
-      initialsSigCanvasRef: this.initialsSigCanvas,
-      submitDrawSignature: this.submitDrawSignature,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 138
-      },
-      __self: this
-    })))))));
+    }));
   }
 
 }
@@ -901,7 +1054,7 @@ class Signature extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./pages/signature.js ***!
   \**********************************/
@@ -968,6 +1121,17 @@ module.exports = require("next/head");
 
 /***/ }),
 
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -976,6 +1140,17 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-bootstrap":
+/*!**********************************!*\
+  !*** external "react-bootstrap" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-bootstrap");
 
 /***/ }),
 
