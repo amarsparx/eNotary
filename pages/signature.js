@@ -1,6 +1,10 @@
 import React from 'react';
 import SignaturePadModal from '../components/Modals/SignaturePadModal';
 
+import '../styles/scss/app.scss';
+import '../styles/scss/main.scss';
+import '../styles/scss/main-responsive.scss';
+
 class Signature extends React.Component {
   constructor(props) {
     super(props);

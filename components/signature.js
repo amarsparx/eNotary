@@ -100,7 +100,7 @@ class Signature extends React.Component {
             rel="stylesheet"
           />
 
-          <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+          {/* <link rel="stylesheet" href="/static/css/bootstrap.min.css" /> */}
         </Head>
 
         <Container>

@@ -1,0 +1,24 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: '/static/fonts/fa';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+@import '~swiper/dist/css/swiper';
+
+@import '~datatables.net-bs4/css/dataTables.bootstrap4';
+@import '~datatables.net-buttons-bs4/css/buttons.bootstrap4.css';
+@import '~datatables.net-fixedcolumns-bs4/css/fixedColumns.bootstrap4.css';
+@import '~datatables.net-fixedheader-bs4/css/fixedHeader.bootstrap4.css';
+@import '~datatables.net-responsive-bs4/css/responsive.bootstrap4.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+// @import "main"
+.disabled-link,
+a[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
