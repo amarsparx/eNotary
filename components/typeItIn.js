@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
-import PropTypes from 'prop-types';
 
 const typeItIn = props => {
   const fontFamily = [
@@ -158,9 +157,5 @@ const typeItIn = props => {
     </>
   );
 };
-// typeItIn.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-//   show: PropTypes.bool
-// };
 
 export default typeItIn;

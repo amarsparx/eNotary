@@ -616,11 +616,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/home/sis075/Documents/signature/components/typeItIn.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -629,14 +626,14 @@ const typeItIn = props => {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: undefined
   }, __jsx("h2", {
@@ -646,7 +643,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: undefined
   }, "Create your Signature"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Form"], {
@@ -656,7 +653,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -665,19 +662,19 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -687,7 +684,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: undefined
   }, "Confirm your name"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -698,20 +695,20 @@ const typeItIn = props => {
     onChange: event => props.nameChangeHandler(event),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: undefined
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -721,7 +718,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: undefined
   }, "Confirm your initials"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -732,19 +729,19 @@ const typeItIn = props => {
     onChange: event => props.initialsNameChangeHandler(event),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: undefined
   })))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -754,7 +751,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 61
     },
     __self: undefined
   }, "Preview"))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -763,19 +760,19 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 67
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: undefined
   }, __jsx("span", {
@@ -792,20 +789,20 @@ const typeItIn = props => {
     className: "name-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 69
     },
     __self: undefined
   }, props.name))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 86
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 87
     },
     __self: undefined
   }, __jsx("span", {
@@ -823,7 +820,7 @@ const typeItIn = props => {
     className: "initials-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 88
     },
     __self: undefined
   }, props.initialsName)))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
@@ -832,31 +829,31 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 108
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 109
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 110
     },
     __self: undefined
   }, "By clicking Accept and Sign, I agree that the signature wil be the electric representation of my signature for all purposewhen I for my agend use themon documents. Including legallybinding documnets, just the same as pen and paper signature.", ' '))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 119
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 120
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
@@ -865,7 +862,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 121
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Label"], {
@@ -876,7 +873,7 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 122
     },
     __self: undefined
   }, "Change Font:"), __jsx("select", {
@@ -888,7 +885,7 @@ const typeItIn = props => {
     onChange: event => props.changeFontHandler(event),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 128
     },
     __self: undefined
   }, fontFamily.map(fontName => {
@@ -897,7 +894,7 @@ const typeItIn = props => {
       value: fontName + ',cursive',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137
+        lineNumber: 136
       },
       __self: undefined
     }, fontName);
@@ -905,13 +902,13 @@ const typeItIn = props => {
     sm: "4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 144
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["FormGroup"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 145
     },
     __self: undefined
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -922,15 +919,11 @@ const typeItIn = props => {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 146
     },
     __self: undefined
   }, "Accept and Sign"))))));
-}; // typeItIn.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-//   show: PropTypes.bool
-// };
-
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (typeItIn);
 
