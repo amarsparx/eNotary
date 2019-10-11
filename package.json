@@ -4,10 +4,18 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "css-loader": "^3.2.0",
+    "datatables.net-bs4": "^1.10.19",
+    "datatables.net-buttons-bs4": "^1.5.6",
+    "datatables.net-colreorder-bs4": "^1.5.1",
+    "datatables.net-fixedcolumns-bs4": "^3.2.6",
+    "datatables.net-fixedheader-bs4": "^3.1.5",
+    "datatables.net-responsive-bs4": "^2.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "next": "^9.0.7",
     "node-sass": "^4.12.0",
@@ -16,7 +24,8 @@
     "react-dom": "^16.10.1",
     "react-signature-canvas": "^1.0.3",
     "react-signature-pad": "0.0.6",
-    "reactstrap": "^8.0.1"
+    "reactstrap": "^8.0.1",
+    "swiper": "^4.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
