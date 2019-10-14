@@ -9,7 +9,6 @@ import {
   ListGroupItem
 } from 'reactstrap';
 import classnames from 'classnames';
-import Head from 'next/head';
 import PropTypes from 'prop-types';
 
 import TypeItIn from './typeItIn';
@@ -21,9 +20,6 @@ class Signature extends React.Component {
     show: PropTypes.bool
   };
 
-  // static defaultProps = {
-  //   middleName: ''
-  // };
   constructor(props) {
     super(props);
     this.tabs = Object.freeze({
@@ -107,7 +103,7 @@ class Signature extends React.Component {
                 tag="button"
               >
                 Type it in
-                </ListGroupItem>
+              </ListGroupItem>
               <ListGroupItem
                 tag="button"
                 className={classnames({
@@ -118,7 +114,7 @@ class Signature extends React.Component {
                 }}
               >
                 Draw It
-                </ListGroupItem>
+              </ListGroupItem>
             </ListGroup>
           </Col>
 
@@ -133,9 +129,7 @@ class Signature extends React.Component {
                   nameFont={this.state.nameFont}
                   name={this.state.name}
                   initialsName={this.state.initialsName}
-                  onSubmit={() =>
-                    this.props.onSubmit(this.submitTypeInData())
-                  }
+                  onSubmit={() => this.props.onSubmit(this.submitTypeInData())}
                 />
               </TabPane>
               <TabPane tabId={this.tabs.DRAW_IT}>
@@ -150,7 +144,7 @@ class Signature extends React.Component {
                   onSubmit={() =>
                     this.props.onSubmit(this.submitDrawSignature())
                   }
-                // onSubmit={this.submitDrawSignature}
+                  // onSubmit={this.submitDrawSignature}
                 />
               </TabPane>
             </TabContent>

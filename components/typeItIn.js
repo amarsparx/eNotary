@@ -75,6 +75,7 @@ const typeItIn = props => {
                   fontWeight: 'bolder',
                   fontSize: '50px',
                   minHeight: '132px',
+                  textAlign: 'center',
                   fontFamily: `${props.nameFont}`
                 }}
                 className="name-preview"
@@ -95,6 +96,7 @@ const typeItIn = props => {
                   fontSize: '50px',
                   minHeight: '132px',
                   minWidth: '200px',
+                  textAlign: 'center',
                   fontFamily: `${props.nameFont}`
                 }}
                 className="initials-preview"
@@ -146,7 +148,7 @@ const typeItIn = props => {
               <Button
                 type="submit"
                 className="btn btn-lg btn-primary col-lg-12"
-                style={{ float: 'right' }}
+                style={{ float: 'right', padding: '0px 10px' }}
               >
                 Accept and Sign
               </Button>

@@ -14,6 +14,7 @@ function Signature(props) {
       </button>
       <SignaturePadModal
         show={showModal}
+        onHide={setShowModal}
         onSubmit={({ signature, initials }) => {
           if (typeof signature === 'string' && typeof initials === 'string') {
             // signature/initials were drawn
