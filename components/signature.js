@@ -93,81 +93,70 @@ class Signature extends React.Component {
 
   render() {
     return (
-      <>
-        <Head>
-          <link
-            href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cookie|Damion|Dancing+Script|Homemade+Apple|Pacifico&display=swap"
-            rel="stylesheet"
-          />
-
-          {/* <link rel="stylesheet" href="/static/css/bootstrap.min.css" /> */}
-        </Head>
-
-        <Container>
-          <Row>
-            <Col xs="3" style={{ marginTop: '77px' }}>
-              <ListGroup>
-                <ListGroupItem
-                  className={classnames({
-                    active: this.state.activeTab === this.tabs.TYPE_IN_IT
-                  })}
-                  onClick={() => {
-                    this.toggle(this.tabs.TYPE_IN_IT);
-                  }}
-                  tag="button"
-                >
-                  Type it in
+      <Container>
+        <Row>
+          <Col xs="3" style={{ marginTop: '77px' }}>
+            <ListGroup>
+              <ListGroupItem
+                className={classnames({
+                  active: this.state.activeTab === this.tabs.TYPE_IN_IT
+                })}
+                onClick={() => {
+                  this.toggle(this.tabs.TYPE_IN_IT);
+                }}
+                tag="button"
+              >
+                Type it in
                 </ListGroupItem>
-                <ListGroupItem
-                  tag="button"
-                  className={classnames({
-                    active: this.state.activeTab === this.tabs.DRAW_IT
-                  })}
-                  onClick={() => {
-                    this.toggle(this.tabs.DRAW_IT);
-                  }}
-                >
-                  Draw It
+              <ListGroupItem
+                tag="button"
+                className={classnames({
+                  active: this.state.activeTab === this.tabs.DRAW_IT
+                })}
+                onClick={() => {
+                  this.toggle(this.tabs.DRAW_IT);
+                }}
+              >
+                Draw It
                 </ListGroupItem>
-              </ListGroup>
-            </Col>
+            </ListGroup>
+          </Col>
 
-            {/* Tab Content column */}
-            <Col>
-              <TabContent activeTab={this.state.activeTab}>
-                <TabPane tabId={this.tabs.TYPE_IN_IT}>
-                  <TypeItIn
-                    nameChangeHandler={this.nameChangeHandler}
-                    initialsNameChangeHandler={this.initialsNameChangeHandler}
-                    changeFontHandler={this.changeFontHandler}
-                    nameFont={this.state.nameFont}
-                    name={this.state.name}
-                    initialsName={this.state.initialsName}
-                    onSubmit={() =>
-                      this.props.onSubmit(this.submitTypeInData())
-                    }
-                  />
-                </TabPane>
-                <TabPane tabId={this.tabs.DRAW_IT}>
-                  <Row style={{ marginBottom: '30px' }}>
-                    <Col sm="12">
-                      <h2 className="text-center">Create your Signature</h2>
-                    </Col>
-                  </Row>
-                  <DrawIt
-                    sigCanvasRef={this.sigCanvas}
-                    initialsSigCanvasRef={this.initialsSigCanvas}
-                    onSubmit={() =>
-                      this.props.onSubmit(this.submitDrawSignature())
-                    }
-                    // onSubmit={this.submitDrawSignature}
-                  />
-                </TabPane>
-              </TabContent>
-            </Col>
-          </Row>
-        </Container>
-      </>
+          {/* Tab Content column */}
+          <Col>
+            <TabContent activeTab={this.state.activeTab}>
+              <TabPane tabId={this.tabs.TYPE_IN_IT}>
+                <TypeItIn
+                  nameChangeHandler={this.nameChangeHandler}
+                  initialsNameChangeHandler={this.initialsNameChangeHandler}
+                  changeFontHandler={this.changeFontHandler}
+                  nameFont={this.state.nameFont}
+                  name={this.state.name}
+                  initialsName={this.state.initialsName}
+                  onSubmit={() =>
+                    this.props.onSubmit(this.submitTypeInData())
+                  }
+                />
+              </TabPane>
+              <TabPane tabId={this.tabs.DRAW_IT}>
+                <Row style={{ marginBottom: '30px' }}>
+                  <Col sm="12">
+                    <h2 className="text-center">Create your Signature</h2>
+                  </Col>
+                </Row>
+                <DrawIt
+                  sigCanvasRef={this.sigCanvas}
+                  initialsSigCanvasRef={this.initialsSigCanvas}
+                  onSubmit={() =>
+                    this.props.onSubmit(this.submitDrawSignature())
+                  }
+                // onSubmit={this.submitDrawSignature}
+                />
+              </TabPane>
+            </TabContent>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
